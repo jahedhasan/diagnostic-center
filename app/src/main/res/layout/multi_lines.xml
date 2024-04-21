@@ -18,7 +18,7 @@
         android:id="@+id/line_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Text"
+        android:text="TextView"
         android:textColor="#FFF000"
         android:textSize="14sp"
         />

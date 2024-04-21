@@ -59,22 +59,19 @@ public class DoctorDetailsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_doctor_details);
-        tv.findViewById(R.id.textViewDDTitle);
-        btn = findViewById(R.id.buttonLTBack);
+        tv = findViewById(R.id.textViewDDTitle);
+        btn=findViewById(R.id.buttonDDBack);
         Intent it =getIntent();
         String  title = it.getStringExtra("title");
         tv.setText(title);
 
         if (title.compareTo("Family Physicians")==0)
             doctor_details = doctor_details1;
-        else
-        if (title.compareTo("Dietician")==0)
+        else if (title.compareTo("Dietician")==0)
             doctor_details = doctor_details2;
-        else
-        if (title.compareTo("Dentist")==0)
+        else if (title.compareTo("Dentist")==0)
             doctor_details = doctor_details3;
-        else
-        if (title.compareTo("Surgeon")==0)
+        else if (title.compareTo("Surgeon")==0)
             doctor_details = doctor_details4;
         else
             doctor_details = doctor_details5;
@@ -102,7 +99,7 @@ public class DoctorDetailsActivity extends AppCompatActivity {
                 R.layout.multi_lines,
                 new String[]{"line1", "line2", "line3", "line4", "line5"} ,
                 new int[]{R.id.line_a, R.id.line_b, R.id.line_c, R.id.line_d, R.id.line_e}
-                );
+        );
         ListView lst = findViewById(R.id.listViewDD);
         lst.setAdapter(sa);
     }
