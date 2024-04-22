@@ -64,11 +64,11 @@ public class LabTestActivity extends AppCompatActivity {
         list = new ArrayList();
         for (int i=0; i<packages.length;i++){
             item = new HashMap<String,String >();
-            item.put("Line1", packages[i][0]);
-            item.put("Line2", packages[i][1]);
-            item.put("Line3", packages[i][2]);
-            item.put("Line4", packages[i][3]);
-            item.put("Line5", "Total Cost:"+packages[i][4]+"/-");
+            item.put("line1", packages[i][0]);
+            item.put("line2", packages[i][1]);
+            item.put("line3", packages[i][2]);
+            item.put("line4", packages[i][3]);
+            item.put("line5", "Total Cost:"+packages[i][4]+"/-");
             list.add(item);
 
             sa = new SimpleAdapter(this,list,
